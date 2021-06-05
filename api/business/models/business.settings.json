@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businesses",
+  "info": {
+    "name": "business",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "second_line_address": {
+      "type": "string"
+    },
+    "business_number": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "county": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "buildings": {
+      "via": "business",
+      "collection": "building"
+    },
+    "first_line_address": {
+      "type": "string"
+    }
+  }
+}
