@@ -19,13 +19,23 @@
       "type": "richtext"
     },
     "items": {
-      "collection": "item",
       "via": "rooms",
+      "collection": "item",
       "dominant": true
     },
     "building": {
-      "model": "building",
-      "via": "rooms"
+      "via": "rooms",
+      "model": "building"
+    },
+    "services": {
+      "via": "rooms",
+      "collection": "service"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "service_items": {
+      "collection": "service-item"
     }
   }
 }

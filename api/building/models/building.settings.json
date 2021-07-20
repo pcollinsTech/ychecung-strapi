@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "buildings",
   "info": {
-    "name": "building"
+    "name": "building",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,7 +27,7 @@
     "business_number": {
       "type": "string"
     },
-    "phone_number": {
+    "mobile_number": {
       "type": "string"
     },
     "email": {
@@ -45,6 +46,21 @@
     "rooms": {
       "via": "building",
       "collection": "room"
+    },
+    "slug": {
+      "type": "string",
+      "private": false
+    },
+    "person_name": {
+      "type": "string"
+    },
+    "items": {
+      "via": "buildings",
+      "collection": "item"
+    },
+    "services": {
+      "via": "building",
+      "collection": "service"
     }
   }
 }

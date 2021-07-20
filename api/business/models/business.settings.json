@@ -42,6 +42,16 @@
     },
     "first_line_address": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "person_name": {
+      "type": "string"
+    },
+    "services": {
+      "via": "business",
+      "collection": "service"
     }
   }
 }

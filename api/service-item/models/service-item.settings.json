@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_items",
+  "info": {
+    "name": "Service Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "serviced": {
+      "type": "boolean"
+    },
+    "date_serviced": {
+      "type": "datetime"
+    },
+    "comments": {
+      "type": "richtext"
+    },
+    "item": {
+      "model": "item"
+    },
+    "room": {
+      "model": "room"
+    },
+    "service": {
+      "model": "service"
+    }
+  }
+}

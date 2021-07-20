@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "items",
   "info": {
-    "name": "item"
+    "name": "item",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,6 +21,21 @@
     "rooms": {
       "via": "items",
       "collection": "room"
+    },
+    "services": {
+      "via": "items",
+      "collection": "service"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "buildings": {
+      "collection": "building",
+      "via": "items",
+      "dominant": true
+    },
+    "service_items": {
+      "collection": "service-item"
     }
   }
 }
