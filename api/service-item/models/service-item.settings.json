@@ -32,6 +32,9 @@
     },
     "service": {
       "model": "service"
+    },
+    "temperature": {
+      "type": "string"
     }
   }
 }

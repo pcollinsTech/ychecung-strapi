@@ -36,6 +36,12 @@
     },
     "service_items": {
       "collection": "service-item"
+    },
+    "size": {
+      "type": "string"
+    },
+    "make": {
+      "type": "string"
     }
   }
 }

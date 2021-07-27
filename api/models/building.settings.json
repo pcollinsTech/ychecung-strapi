@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buildings",
+  "info": {
+    "name": "building",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "first_line_address": {
+      "type": "string"
+    },
+    "second_line_address": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "business_number": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "city": {
+      "type": "string"
+    },
+    "county": {
+      "type": "string"
+    },
+    "business": {
+      "via": "buildings",
+      "model": "business"
+    },
+    "rooms": {
+      "via": "building",
+      "collection": "room"
+    },
+    "slug": {
+      "type": "string",
+      "private": false
+    },
+    "person_name": {
+      "type": "string"
+    },
+    "items": {
+      "via": "buildings",
+      "collection": "item"
+    },
+    "services": {
+      "via": "building",
+      "collection": "service"
+    }
+  }
+}
